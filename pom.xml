@@ -5,7 +5,7 @@
   <parent>
     <groupId>org.jenkins-ci.plugins</groupId>
     <artifactId>plugin</artifactId>
-    <version>5.19</version>
+    <version>5.22</version>
     <relativePath />
   </parent>
 
@@ -36,8 +36,9 @@
     <jenkins.baseline>2.492</jenkins.baseline>
     <jenkins.version>${jenkins.baseline}.3</jenkins.version>
     <gitHubRepo>jenkinsci/${project.artifactId}-plugin</gitHubRepo>
-
     <spotless.check.skip>false</spotless.check.skip>
+    <hpi.bundledArtifacts>artifactory-java-client-api,artifactory-java-client-httpClient,artifactory-java-client-services,file-specs-java</hpi.bundledArtifacts>
+    <hpi.strictBundledArtifacts>true</hpi.strictBundledArtifacts>
   </properties>
 
   <dependencyManagement>
