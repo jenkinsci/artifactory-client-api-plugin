@@ -30,7 +30,7 @@
   </scm>
 
   <properties>
-    <revision>2.19.0</revision>
+    <revision>2.21.1</revision>
     <changelist>999999-SNAPSHOT</changelist>
     <!-- https://www.jenkins.io/doc/developer/plugin-development/choosing-jenkins-baseline/ -->
     <jenkins.baseline>2.492</jenkins.baseline>
