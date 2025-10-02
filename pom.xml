@@ -19,7 +19,7 @@
   <licenses>
     <license>
       <name>Apache 2</name>
-      <url>http://www.apache.org/licenses/</url>
+      <url>https://www.apache.org/licenses/</url>
     </license>
   </licenses>
   <scm>
@@ -37,6 +37,7 @@
     <jenkins.version>${jenkins.baseline}.3</jenkins.version>
     <gitHubRepo>jenkinsci/${project.artifactId}-plugin</gitHubRepo>
     <spotless.check.skip>false</spotless.check.skip>
+    <ban-junit4-imports.skip>false</ban-junit4-imports.skip>
     <hpi.bundledArtifacts>artifactory-java-client-api,artifactory-java-client-httpClient,artifactory-java-client-services,file-specs-java</hpi.bundledArtifacts>
     <hpi.strictBundledArtifacts>true</hpi.strictBundledArtifacts>
   </properties>
