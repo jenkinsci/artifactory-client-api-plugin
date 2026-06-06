@@ -132,5 +132,17 @@
         <directory>src/main/resources</directory>
       </resource>
     </resources>
+    <plugins>
+      <plugin>
+        <groupId>org.jenkins-ci.tools</groupId>
+        <artifactId>maven-hpi-plugin</artifactId>
+        <configuration>
+          <!-- Use child-first classloading so bundled Groovy 4 classes take precedence
+               over Jenkins core's groovy-all:2.4.21, which also contains org.codehaus.groovy.*
+               and org.apache.groovy.* but with an incompatible (Groovy 2) API. -->
+          <pluginFirstClassLoader>true</pluginFirstClassLoader>
+        </configuration>
+      </plugin>
+    </plugins>
   </build>
 </project>
