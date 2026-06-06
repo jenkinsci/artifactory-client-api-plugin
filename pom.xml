@@ -30,7 +30,7 @@
   </scm>
 
   <properties>
-    <revision>2.19.0</revision>
+    <revision>2.21.2</revision>
     <changelist>999999-SNAPSHOT</changelist>
     <!-- https://www.jenkins.io/doc/developer/plugin-development/choosing-jenkins-baseline/ -->
     <jenkins.baseline>2.492</jenkins.baseline>
@@ -38,7 +38,7 @@
     <gitHubRepo>jenkinsci/${project.artifactId}-plugin</gitHubRepo>
     <spotless.check.skip>false</spotless.check.skip>
     <ban-junit4-imports.skip>false</ban-junit4-imports.skip>
-    <hpi.bundledArtifacts>artifactory-java-client-api,artifactory-java-client-httpClient,artifactory-java-client-services,file-specs-java</hpi.bundledArtifacts>
+    <hpi.bundledArtifacts>artifactory-java-client-api,artifactory-java-client-httpClient,artifactory-java-client-services,file-specs-java,groovy</hpi.bundledArtifacts>
     <hpi.strictBundledArtifacts>true</hpi.strictBundledArtifacts>
     <ban-commons-lang-2.skip>false</ban-commons-lang-2.skip>
     <banObsoleteDependencyOverrides.skip>false</banObsoleteDependencyOverrides.skip>
@@ -98,11 +98,6 @@
         <exclusion>
           <groupId>org.apache.httpcomponents</groupId>
           <artifactId>httpclient</artifactId>
-        </exclusion>
-        <!-- Provided by core -->
-        <exclusion>
-          <groupId>org.codehaus.groovy</groupId>
-          <artifactId>groovy</artifactId>
         </exclusion>
         <exclusion>
           <groupId>org.slf4j</groupId>
